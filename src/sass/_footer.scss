@@ -1,0 +1,126 @@
+/* ! == FOOTER == */
+.footer {
+    background: #2d2d2d;
+    position: relative;
+    padding: 14px 0;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+}
+.footer-logo {
+    flex-basis: 110px;
+    -ms-flex-preferred-size: 110px;
+    max-width: 110px;
+}
+.footer-info {
+    padding-left: 20px;
+}
+.footer-nav {
+    margin-bottom: 16px;
+    li {
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        font-weight: 300;
+        font-size: 1.4rem;
+        color: #fff;
+        text-transform: uppercase;
+        @include link-transition();
+        border-bottom: 1px solid transparent;
+        &:hover {
+            color: #ccc;
+            border-bottom-color: #ccc;
+        }
+    }
+}
+.footer-copy {
+    .footer-copy__item {
+        font-weight: 300;
+        font-size: 1.4rem;
+        color: #8e8e8e;
+        margin-right: 22px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.footer-second {
+
+}
+.link-studio {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #8e8e8e;
+    @include link-transition();
+    span {
+        color: #f3f3f3;
+        @include link-transition();
+    }
+    &:hover {
+        span {
+            color: #FF2700;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer-social {
+        width: 100%;
+    }
+    .footer-studio {
+        margin-top: 11px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .footer {
+        padding: 14px 0 18px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-nav {
+        li:nth-child(7) {
+            display: none;
+        }
+        li:nth-child(6) {
+            margin-right: 0;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .footer-info {
+        padding-left: 15px;
+    }
+    .footer-nav {
+        li {
+            margin-right: 23px;
+        }
+    }
+}
+@media screen and (max-width: 595px) {
+    .footer-nav {
+        display: none !important;
+    }
+    .footer-info {
+        flex-basis: 175px;
+        -ms-flex-preferred-size: 175px;
+        max-width: 175px;
+    }
+    .footer-copy {
+        .footer-copy__item {
+            margin: 0 0 6px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .footer {
+        padding: 16px 0 14px;
+    }
+    .link-studio {
+        font-size: 1.2rem;
+    }
+}

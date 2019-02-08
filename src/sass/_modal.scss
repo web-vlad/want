@@ -1,0 +1,162 @@
+/* ! == MODAL == */
+.box-form-modal {
+    text-align: center;
+    .modal-title {
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: #fff;
+        display: block;
+        padding-top: 20px;
+        line-height: 1.25em;
+        margin: 20px 0 40px;
+    }
+    .modal-form {
+        padding: 0 25px;
+    }
+    .block-message {
+        textarea {
+            min-height: 100px;
+            max-height: 100px;
+        }
+    }
+}
+.modal-form .block-input {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.box-form-modal textarea {
+    min-height: 110px;
+    max-height: 110px;
+}
+.box-form-modal .btn {
+    padding: 0 30px;
+    margin-top: 20px;
+}
+.reveal-modal {
+    color: #404040;
+}
+.wrapp-thanks {
+    padding: 55px 15px 25px;
+}
+.reveal-modal a, .reveal-modal button, .reveal-modal input, .reveal-modal textarea {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+}
+/*.reveal-modal input:focus {
+	border: 1px solid #FAD61E;
+	box-shadow: inset 0px 0px 6px 2px #FAD61E;
+}*/
+.wrapp-modal {
+    position: relative;
+}
+.reveal-modal-bg {
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.reveal-modal {
+    visibility: hidden;
+    top: 80px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    position: absolute;
+    z-index: 110;
+    padding: 0 0 27px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.thanks {
+    /*width: 400px;
+    width: 360px;
+    */
+    top: 100px !important;
+    position: fixed;
+    color: #fff;
+    text-align: center;
+}
+.thanks p {
+    margin: 12px 0 0;
+    strong {
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        line-height: 1.6em;
+    }
+    span {
+        font-size: 1.8rem;
+        display: block;
+        line-height: 1.2em;
+    }
+}
+.close-popap {
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: #ddd;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: -5px;
+    right: 10px;
+    z-index: 1;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.thanks .close-popap {
+    top: 15px;
+    right: 20px;
+}
+@media screen and (max-width: 560px) {
+    .reveal-modal {
+        width: 300px;
+        margin-left: -150px;
+    }
+    .box-form-modal h3 {
+        font-size: 1.8rem;
+    }
+    .box-form-modal .block-input input, .box-form-modal .block-message textarea {
+        font-size: 1.4rem;
+    }
+    .box-form-modal .block-input input {
+        height: 40px;
+        line-height: 40px;
+    }
+    .box-form-modal ::-webkit-input-placeholder {
+        font-size: 1.4rem;
+    }
+    .box-form-modal :-moz-placeholder {
+        font-size: 1.4rem;
+    }
+    .box-form-modal ::-moz-placeholder {
+        font-size: 1.4rem;
+    }
+    .box-form-modal :-ms-input-placeholder {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .reveal-modal {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    .box-form-modal h3 {
+        margin-bottom: 5px;
+    }
+    .box-form-modal textarea {
+        min-height: 80px;
+        max-height: 80px;
+    }
+}
+
